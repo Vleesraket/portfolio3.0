@@ -1,0 +1,13 @@
+import "./header.css"
+
+function header() {
+    return (
+        <>
+            <header>
+                <h1>Header</h1>
+            </header>
+        </>
+    )
+}
+
+export default header;

@@ -1,0 +1,16 @@
+{
+    "languages": {
+        "en": {
+            "header": {
+                "title": "Quinn's Portfolio EN",
+                "home": "Home"
+            }
+        },
+        "nl": {
+            "header": {
+                "title": "Quinn's Portfolio NL",
+                "home": "Home"
+            }
+        }
+    }
+}

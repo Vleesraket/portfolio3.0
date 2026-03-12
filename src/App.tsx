@@ -1,13 +1,21 @@
+import { useState } from 'react';
 import './App.css'
-import header from './components/header/header.tsx'
+import { Header } from './components/header/header.tsx'
+import type { LangKey } from './components/header/header.tsx';
+
 function App() {
+  const [lang, setLang] = useState<LangKey>("en");
+
+  const toggleLang = () => {
+    setLang(lang === "en" ? "nl" : "en");
+  };
 
   return (
     <>
-      {header()}
+      <Header lang={lang} toggleLang={toggleLang} />
       <h1>Sup</h1>
     </>
   )
 }
 
-export default App
+export { App }

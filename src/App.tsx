@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css'
 import { Header } from './components/header/header.tsx'
 import type { LangKey } from './components/header/header.tsx';
 
@@ -8,12 +7,12 @@ function App() {
 
   const toggleLang = () => {
     setLang(lang === "en" ? "nl" : "en");
+    console.log(`Language switched to: ${lang === "en" ? "nl" : "en"}`);
   };
 
   return (
     <>
       <Header lang={lang} toggleLang={toggleLang} />
-      <h1>Sup</h1>
     </>
   )
 }

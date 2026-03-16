@@ -1,13 +1,89 @@
 #lang-button {
+    position: relative;
+    overflow: hidden;
     background-color: transparent;
     border: none;
     color: black;
     font-size: 16px;
     cursor: pointer;
+    padding: 0;
+    border-radius: 4px;
+    transition: transform 0.28s ease, filter 0.28s ease;
+}
+
+#lang-button::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -50%;
+    width: 40%;
+    height: 160%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0));
+    transform: translateX(-220%) rotate(12deg);
+    pointer-events: none;
+}
+
+#lang-button:hover {
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.06);
+}
+
+#lang-button:hover::after {
+    transition: transform 0.65s ease;
+    transform: translateX(340%) rotate(12deg);
+}
+
+#lang-button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+#lang-button:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.75);
+    outline-offset: 3px;
 }
 
 .lang-icon {
-    width: 20px;
-    height: auto;
-    display: block;
+    width: 70px;
+    height: 35px;
+    display: flex;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    border-radius: 1px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+#lang-button:hover .lang-icon {
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.36);
+}
+
+#header-container.header-scrolled #lang-button:focus-visible {
+    outline-color: rgba(25, 25, 25, 0.75);
+}
+
+#header-container.header-scrolled .lang-icon {
+    border-color: rgba(25, 25, 25, 0.6);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+#header-container.header-scrolled #lang-button:hover .lang-icon {
+    border-color: rgba(25, 25, 25, 0.9);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #lang-button,
+    .lang-icon,
+    #lang-button::after {
+        transition: none;
+    }
+
+    #lang-button:hover {
+        transform: none;
+        filter: none;
+    }
+
+    #lang-button:hover::after {
+        transform: translateX(-220%) rotate(12deg);
+    }
 }

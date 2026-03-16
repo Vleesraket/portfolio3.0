@@ -2,14 +2,24 @@
     "languages": {
         "en": {
             "header": {
-                "title": "Quinn's Portfolio EN",
-                "home": "Home"
+                "title": "Quinn Otto",
+                "home": "Home",
+                "nav": {
+                    "about": "About",
+                    "projects": "Projects",
+                    "contact": "Contact"
+                }
             }
         },
         "nl": {
             "header": {
-                "title": "Quinn's Portfolio NL",
-                "home": "Home"
+                "title": "Quinn Otto",
+                "home": "Home",
+                "nav": {
+                    "about": "Over mij",
+                    "projects": "Projecten",
+                    "contact": "Contact"
+                }
             }
         }
     }

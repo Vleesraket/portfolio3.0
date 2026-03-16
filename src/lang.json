@@ -9,6 +9,16 @@
                     "projects": "Projects",
                     "contact": "Contact"
                 }
+            },
+            "hero": {
+                "kicker": "Student at Grafisch Lyceum Rotterdam, Creative Softerware Developer.",
+                "title": "Making unique, projects that stand out!",
+                "activeStatus": "Active",
+                "status": "Offline",
+                "nowLabel": "Now",
+                "description": "Enthusiastic about design, typography, and the dynamic areas of interaction design across the web. Specialised in building digital products that translate into accessible and functional experiences.",
+                "primaryAction": "Let's Work Together",
+                "secondaryAction": "View All Work"
             }
         },
         "nl": {
@@ -20,6 +30,16 @@
                     "projects": "Projecten",
                     "contact": "Contact"
                 }
+            },
+            "hero": {
+                "kicker": "student op het Grafisch Lyceum Rotterdam, Creatief Software Ontwikkelaar.",
+                "title": "Het maken van unieke, projecten die opvallen!",
+                "activeStatus": "Actief",
+                "status": "Offline",
+                "nowLabel": "Nu",
+                "description": "Enthousiast over design, typografie en de dynamische kanten van interaction design op het web. Gespecialiseerd in het bouwen van digitale producten die vertalen naar toegankelijke en functionele ervaringen.",
+                "primaryAction": "Laten We Samenwerken",
+                "secondaryAction": "Bekijk Al Mijn Werk"
             }
         }
     }

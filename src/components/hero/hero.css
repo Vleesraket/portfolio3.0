@@ -1,0 +1,126 @@
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin: 0 auto;
+    margin-top: 0;
+    min-height: 100vh;
+    width: 80vw;
+    padding-top: 12vh;
+    padding-bottom: 4vh;
+    box-sizing: border-box;
+}
+
+.hero-kicker {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.hero-intro-card {
+    width: min(34rem, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 12%;
+}
+@media (max-height: 700px) {
+    .hero-intro-card {
+        margin-top: 10%;
+    }
+}
+.hero-intro-meta {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(0.88rem, 1.1vw, 1.02rem);
+    font-weight: 500;
+}
+
+.hero-intro-status {
+    color: rgba(172, 181, 191, 0.9);
+}
+
+.hero-intro-status.is-active {
+    color: #58d16b;
+}
+
+.hero-intro-time {
+    color: rgba(255, 255, 255, 0.97);
+}
+
+.hero-intro-activity {
+    margin: 0;
+    max-width: 52ch;
+    color: rgba(88, 209, 107, 0.95);
+    font-size: clamp(0.86rem, 1vw, 0.96rem);
+    line-height: 1.4;
+}
+
+.hero-intro-description {
+    margin: 0;
+    max-width: 52ch;
+    color: rgba(255, 255, 255, 0.94);
+    font-size: clamp(0.98rem, 1.15vw, 1.12rem);
+    line-height: 1.44;
+}
+
+.hero-intro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.hero-intro-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.3rem;
+    padding: 0 0.9rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    font-size: clamp(0.88rem, 1vw, 0.98rem);
+    font-weight: 650;
+    letter-spacing: 0.01em;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-intro-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.hero-intro-btn:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.95);
+    outline-offset: 2px;
+}
+
+.hero-intro-btn--light {
+    color: #111;
+    background: #f2f3f4;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.26);
+}
+
+.hero-intro-btn--dark {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-title {
+    margin: 0;
+    max-width: 22ch;
+    font-size: clamp(2.35rem, 5.5vw, 5.4rem);
+    line-height: 1.02;
+    font-weight: 700;
+}
+
+@media (max-width: 840px) {
+    .hero-intro-meta {
+        flex-wrap: wrap;
+    }
+}

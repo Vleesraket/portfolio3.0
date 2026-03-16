@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Header } from './components/header/header.tsx'
+import { Hero } from './components/hero/hero.tsx'
 import type { LangKey } from './components/header/header.tsx';
+
+import './App.css';
 
 function App() {
   const [lang, setLang] = useState<LangKey>("en");
@@ -13,6 +16,7 @@ function App() {
   return (
     <>
       <Header lang={lang} toggleLang={toggleLang} />
+      <Hero lang={lang} />
     </>
   )
 }

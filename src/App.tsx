@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export { App }
+export { App, type LangKey };

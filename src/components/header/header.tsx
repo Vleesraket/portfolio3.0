@@ -14,7 +14,7 @@ function Header({ lang, toggleLang }: HeaderProps) {
         <>
             <header>
                 <h1>{langs.languages[lang].header.title}</h1>
-                {lang_button(toggleLang)}
+                {lang_button(lang, toggleLang)}
             </header>
         </>
     )

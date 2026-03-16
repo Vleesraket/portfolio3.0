@@ -1,0 +1,13 @@
+#lang-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lang-icon {
+    width: 20px;
+    height: auto;
+    display: block;
+}
